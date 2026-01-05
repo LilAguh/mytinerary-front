@@ -1,16 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import LegacyApp from './legacy/App';
 import { Provider } from 'react-redux';
-import store from "./features/store"
-import reportWebVitals from './reportWebVitals';
+import store from "./legacy/features/store"
+import reportWebVitals from './legacy/reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <LegacyApp />
     </Provider>
   </React.StrictMode>
 );
